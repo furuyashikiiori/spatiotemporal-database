@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./app.css" />
+    <script src="./script.js"></script>
+    <title>配達アプリケーション</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="back-home">
+        <input
+          type="button"
+          onclick="location.href='./index.html'"
+          value="ホームに戻る"
+        />
+      </div>
+      <h1>配達ルート作成</h1>
+
+      <div class="register-section">
+        <h2>店舗を登録</h2>
+        <input type="text" id="store-name" placeholder="店舗名を入力" />
+        <input type="text" id="store-address" placeholder="住所を入力" />
+        <input
+          type="text"
+          id="store-location"
+          placeholder="正確な場所を入力 (緯度, 経度)"
+        />
+        <textarea id="store-notes" placeholder="メモを入力"></textarea>
+        <button onclick="registerStore()">登録</button>
+      </div>
+
+      <div class="search-section">
+        <h2>店舗を検索</h2>
+        <input type="text" id="search-query" placeholder="店舗名で検索" />
+        <button onclick="searchStores()">検索</button>
+        <ul id="search-results"></ul>
+      </div>
+
+      <div class="delivery-section">
+        <h2>配達先一覧</h2>
+        <ul id="delivery-list"></ul>
+      </div>
+
+      <div class="map-section">
+        <h2>ルート地図</h2>
+        <div id="map">[地図がここに表示されます]</div>
+      </div>
+    </div>
+  </body>
+</html>
