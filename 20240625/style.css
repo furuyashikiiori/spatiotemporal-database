@@ -1,0 +1,18 @@
+.bottn {
+  color: rgb(255, 255, 255);
+  background-color: rgb(51, 180, 255);
+}
+
+.Q-bottn {
+  background-color: aqua;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0 auto;
+}
+
+.remainder-zero {
+  color: red;
+}
